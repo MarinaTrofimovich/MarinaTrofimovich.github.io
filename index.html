@@ -16343,28 +16343,72 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="1.-Introduction">1. Introduction<a class="anchor-link" href="#1.-Introduction">&#182;</a></h1>
+<ul>
+<li><a href="#int">1. Introduction</a><ul>
+<li><a href="#pr">1.1 Problem</a></li>
+<li><a href="#obj">1.2 Objectives</a></li>
+<li><a href="#dd">1.3 Data description</a></li>
+</ul>
+</li>
+<li><a href="#set">2. Importing of the libraries &amp; settings</a></li>
+<li><a href="#av">3. Analysis and visualization</a><ul>
+<li><a href="#ca">3.1 Correlation analysis</a></li>
+<li><a href="#te">3.2 Target "Exited"</a></li>
+<li><a href="#cs">3.3 CreditScore</a></li>
+<li><a href="#geo">3.4 Geography</a></li>
+<li><a href="#ge">3.5 Gender</a></li>
+<li><a href="#age">3.6 Age</a></li>
+<li><a href="#ba">3.7 Balance</a></li>
+<li><a href="#np">3.8 NumOfProducts</a></li>
+<li><a href="#am">3.9 IsActiveMember</a></li>
+</ul>
+</li>
+<li><a href="#dp">4. Data Preprocessing</a></li>
+<li><a href="#ml">5. Machine learning models</a><ul>
+<li><a href="#LR">5.1 Logistic Regression</a></li>
+<li><a href="#KNN">5.2 K-nearest neighbors</a></li>
+<li><a href="#SVM">5.3 Support Vector Machine</a></li>
+<li><a href="#RF">5.4 Random Forest</a></li>
+</ul>
+</li>
+<li><a href="#MS">6. Model selection. Conclusions</a></li>
+</ul>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.1-Problem">1.1 Problem<a class="anchor-link" href="#1.1-Problem">&#182;</a></h2>
+<h1 id="1.-Introduction">1. Introduction<a class="anchor" id="int" /><a class="anchor-link" href="#1.-Introduction">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div align="justify">Customer churn is the percentage of customers that stopped using the company's product or service during a certain time frame. Predicting customer churn is a very actual problem. Having the ability to predict future churn rates is necessary for every branch of business. It can help to predict future revenue, to identify and improve upon areas where customer service is lacking. In this research, we will try to solve this challenge for a given dataset.</div>
+<div align="justify">Customer churn is the percentage of customers that stopped using the company's product or service during a certain time frame. Predicting customer churn is a very actual problem. Having the ability to predict future churn rates is necessary for every branch of business. It can help to predict future revenue, to identify and improve upon areas where customer service is lacking.</div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://www.kaggle.com/adammaus/predicting-churn-for-bank-customers">Kaggle - predicting-churn-for-bank-customers</a></p>
+<h2 id="1.1-Problem">1.1 Problem<a class="anchor" id="pr" /><a class="anchor-link" href="#1.1-Problem">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div align="justify">In this research, we will try to solve the challenge of predicting customer churn for a given dataset:</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://www.kaggle.com/adammaus/predicting-churn-for-bank-customers">Kaggle - predicting-churn-for-bank-customers</a>.</p>
 
 </div>
 </div>
@@ -16379,7 +16423,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.2-Objectives">1.2 Objectives<a class="anchor-link" href="#1.2-Objectives">&#182;</a></h2>
+<h2 id="1.2-Objectives">1.2 Objectives<a class="anchor" id="obj" /><a class="anchor-link" href="#1.2-Objectives">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16397,7 +16441,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.3-Data-description">1.3 Data description<a class="anchor-link" href="#1.3-Data-description">&#182;</a></h2>
+<h2 id="1.3-Data-description">1.3 Data description<a class="anchor" id="dd" /><a class="anchor-link" href="#1.3-Data-description">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -16430,7 +16474,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.-Importing-of-the-libraries-&amp;-settings">2. Importing of the libraries &amp; settings<a class="anchor-link" href="#2.-Importing-of-the-libraries-&amp;-settings">&#182;</a></h1>
+<h1 id="2.-Importing-of-the-libraries-&amp;-settings">2. Importing of the libraries &amp; settings<a class="anchor" id="set" /><a class="anchor-link" href="#2.-Importing-of-the-libraries-&amp;-settings">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -16559,7 +16603,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="3.-Analysis-and-visualization">3. Analysis and visualization<a class="anchor-link" href="#3.-Analysis-and-visualization">&#182;</a></h1>
+<h1 id="3.-Analysis-and-visualization">3. Analysis and visualization<a class="anchor" id="av" /><a class="anchor-link" href="#3.-Analysis-and-visualization">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -16574,7 +16618,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.1-Correlation-analysis">3.1 Correlation analysis<a class="anchor-link" href="#3.1-Correlation-analysis">&#182;</a></h2>
+<h2 id="3.1-Correlation-analysis">3.1 Correlation analysis<a class="anchor" id="ca" /><a class="anchor-link" href="#3.1-Correlation-analysis">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17296,7 +17340,7 @@ memory usage: 859.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.2-Target-&quot;Exited&quot;">3.2 Target "Exited"<a class="anchor-link" href="#3.2-Target-&quot;Exited&quot;">&#182;</a></h2>
+<h2 id="3.2-Target-&quot;Exited&quot;">3.2 Target "Exited"<a class="anchor" id="te" /><a class="anchor-link" href="#3.2-Target-&quot;Exited&quot;">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17429,7 +17473,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.3-CreditScore">3.3 CreditScore<a class="anchor-link" href="#3.3-CreditScore">&#182;</a></h2>
+<h2 id="3.3-CreditScore">3.3 CreditScore<a class="anchor" id="cs" /><a class="anchor-link" href="#3.3-CreditScore">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17728,7 +17772,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.4-Geography">3.4 Geography<a class="anchor-link" href="#3.4-Geography">&#182;</a></h2>
+<h2 id="3.4-Geography">3.4 Geography<a class="anchor" id="geo" /><a class="anchor-link" href="#3.4-Geography">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -18028,7 +18072,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.5-Gender">3.5 Gender<a class="anchor-link" href="#3.5-Gender">&#182;</a></h2>
+<h2 id="3.5-Gender">3.5 Gender<a class="anchor" id="ge" /><a class="anchor-link" href="#3.5-Gender">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -18243,7 +18287,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.6-Age">3.6 Age<a class="anchor-link" href="#3.6-Age">&#182;</a></h2>
+<h2 id="3.6-Age">3.6 Age<a class="anchor" id="age" /><a class="anchor-link" href="#3.6-Age">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -18567,7 +18611,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.7-Balance">3.7 Balance<a class="anchor-link" href="#3.7-Balance">&#182;</a></h2>
+<h2 id="3.7-Balance">3.7 Balance<a class="anchor" id="ba" /><a class="anchor-link" href="#3.7-Balance">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -18954,7 +18998,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.8-NumOfProducts">3.8 NumOfProducts<a class="anchor-link" href="#3.8-NumOfProducts">&#182;</a></h2>
+<h2 id="3.8-NumOfProducts">3.8 NumOfProducts<a class="anchor" id="np" /><a class="anchor-link" href="#3.8-NumOfProducts">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -19248,7 +19292,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.9-IsActiveMember">3.9 IsActiveMember<a class="anchor-link" href="#3.9-IsActiveMember">&#182;</a></h2>
+<h2 id="3.9-IsActiveMember">3.9 IsActiveMember<a class="anchor" id="am" /><a class="anchor-link" href="#3.9-IsActiveMember">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -19448,7 +19492,7 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="4.-Data-Preprocessing">4. Data Preprocessing<a class="anchor-link" href="#4.-Data-Preprocessing">&#182;</a></h1>
+<h1 id="4.-Data-Preprocessing">4. Data Preprocessing<a class="anchor" id="dp" /><a class="anchor-link" href="#4.-Data-Preprocessing">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -21294,14 +21338,22 @@ if (outputEl) {{
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.-Machine-learning-models">5. Machine learning models<a class="anchor-link" href="#5.-Machine-learning-models">&#182;</a></h1>
+<h1 id="5.-Machine-learning-models">5. Machine learning models<a class="anchor" id="ml" /><a class="anchor-link" href="#5.-Machine-learning-models">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.1-Logistic-Regression">5.1 Logistic Regression<a class="anchor-link" href="#5.1-Logistic-Regression">&#182;</a></h2>
+<p>In this section we will consider several machine learning models and compare them.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="5.1-Logistic-Regression">5.1 Logistic Regression<a class="anchor" id="LR" /><a class="anchor-link" href="#5.1-Logistic-Regression">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -21665,7 +21717,7 @@ weighted avg       0.86      0.87      0.86      2376
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.2-K-nearest-neighbors">5.2 K-nearest neighbors<a class="anchor-link" href="#5.2-K-nearest-neighbors">&#182;</a></h2>
+<h2 id="5.2-K-nearest-neighbors">5.2 K-nearest neighbors<a class="anchor" id="KNN" /><a class="anchor-link" href="#5.2-K-nearest-neighbors">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -21876,7 +21928,7 @@ weighted avg       0.85      0.86      0.85      2376
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.3-Support-Vector-Machine">5.3 Support Vector Machine<a class="anchor-link" href="#5.3-Support-Vector-Machine">&#182;</a></h2>
+<h2 id="5.3-Support-Vector-Machine">5.3 Support Vector Machine<a class="anchor" id="SVM" /><a class="anchor-link" href="#5.3-Support-Vector-Machine">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -22119,7 +22171,7 @@ weighted avg       0.87      0.87      0.86      2376
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="5.4-Random-Forest">5.4 Random Forest<a class="anchor-link" href="#5.4-Random-Forest">&#182;</a></h2>
+<h2 id="5.4-Random-Forest">5.4 Random Forest<a class="anchor" id="RF" /><a class="anchor-link" href="#5.4-Random-Forest">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -22536,7 +22588,7 @@ weighted avg       0.86      0.87      0.86      2376
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="6.-Model-selection.-Conclusions">6. Model selection. Conclusions<a class="anchor-link" href="#6.-Model-selection.-Conclusions">&#182;</a></h1>
+<h1 id="6.-Model-selection.-Conclusions">6. Model selection. Conclusions<a class="anchor" id="MS" /><a class="anchor-link" href="#6.-Model-selection.-Conclusions">&#182;</a></h1>
 </div>
 </div>
 </div>
